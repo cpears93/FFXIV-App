@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-
+    <h1>Your one stop giude to the world of Eorza</h1>
   );
 }
 
