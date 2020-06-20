@@ -1,10 +1,16 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <h1>Your one stop giude to the world of Eorza</h1>
-  );
+import MainContainer from './containers/MainContainer'
+
+class App extends Component {
+
+  render () {
+    return (
+      <div>
+      <MainContainer />
+      </div>
+    );
+  }
 }
 
 export default App;
