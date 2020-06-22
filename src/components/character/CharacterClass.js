@@ -7,9 +7,12 @@ const CharacterClass = ({characterClass}) => {
   }
   return (
     <Fragment>
-    <p>
-    {characterClass.Name}
-    </p>
+    <p>{characterClass.baseClass}</p>
+    <p>{characterClass.job}</p>
+    <p>{characterClass.role}</p>
+    <p>{characterClass.startingLocation}</p>
+    <p>{characterClass.prerequisites}</p>
+    <p>{characterClass.startingLevel}</p>
     </Fragment>
   )
 }

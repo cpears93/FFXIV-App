@@ -7,14 +7,14 @@ const Server = (props) => {
         <p className="name">
           {props.server.name}
         </p>
-        <p className="location">
-          {props.server.location}
+        <p className="world">
+          {props.server.world}
+        </p>
+        <p className="data_center">
+          {props.server.dataCenter}
         </p>
         <p className="population">
           {props.server.population}
-        </p>
-        <p className="status">
-          {props.server.status}
         </p>
     </div>
   )
