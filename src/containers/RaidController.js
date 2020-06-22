@@ -1,14 +1,14 @@
 import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import CharacterClassList from '../components/character/CharacterClass';
+import RaidList from '../components/raids/raid';
 import Request from '../helpers/request.js';
 
-class CharacterClassContainer extends Component {
+class RaidContainer extends Component {
   constructor(props){
     super(props);
 
     this.state = {
-      class: []
+      raids: []
     }
   }
 
@@ -18,14 +18,14 @@ class CharacterClassContainer extends Component {
        <Fragment>
         <Switch>
          <Route render={(props) => {
-           return <CharacterClassList characterClass = {this.state.characterClass} />
+           return <Raidlist raids={this.state.raids} />
          }} />
         </Switch>
-      </Fragment>
-     </Router>
+       </Fragment>
+      </Router>
     )
   }
 
 }
 
-export default CharacterClassContainer;
+export default RaidContainer;

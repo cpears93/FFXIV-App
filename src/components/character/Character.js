@@ -17,4 +17,4 @@ const CharacterClass = ({characterClass}) => {
   )
 }
 
-export default CharacterClass;
+export default Character;
