@@ -6,7 +6,6 @@ import Request from '../helpers/request.js';
 class CharacterContainer extends Component {
   constructor(props){
     super(props);
-
     this.state = {
       character: []
     }
