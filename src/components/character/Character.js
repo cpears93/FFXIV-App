@@ -7,9 +7,9 @@ const Character = ({character}) => {
   }
   return (
     <Fragment>
-    <p>Base Class:{character.baseClass}
+    <p>Base Class: {character.baseClass}
     </p>
-    <p>Job:{character.job}
+    <p>Job: {character.job}
     </p>
     <p>Role: {character.role}
     </p>

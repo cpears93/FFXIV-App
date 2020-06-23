@@ -15,8 +15,10 @@ class CharacterContainer extends Component {
   componentDidMount(){
     const request = new Request();
 
-    request.get('api/characters')
-    .then(data => this.setState({characters: data}))
+    request.get('/api/pirates')
+    .then((data) => {
+      this.setState({character: data})
+    })
   }
 
   render(){

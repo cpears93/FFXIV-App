@@ -3,9 +3,9 @@ import Character from './Character.js';
 
 const CharacterList = (props) => {
 
-  if (props.Character.length === 0){
-    return ("Loading...")
-  }
+  // if (props.Character.length === 0){
+  //   return (<p>Loading...</p>)
+  // }
 
   const allCharacter = props.character.map((character, index) => {
     return (

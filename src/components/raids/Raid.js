@@ -7,19 +7,19 @@ const Raid = (props) => {
       <p className="name">
         {props.raid.name}
       </p>
-      <p>Level:{props.raid.level}
+      <p>Level: {props.raid.level}
       </p>
-      <p>Item Level Reqquirement:{props.raid.itemLevelReq}
+      <p>Item Level Reqquirement: {props.raid.itemLevelReq}
       </p>
-      <p>Turns:{props.raid.turns}
+      <p>Turns: {props.raid.turns}
       </p>
-      <p>Loot Item Level:{props.raid.lootItemLevel}
+      <p>Loot Item Level: {props.raid.lootItemLevel}
       </p>
-      <p>Tome Per Turn:{props.raid.tomePerTurn}
+      <p>Tome Per Turn: {props.raid.tomePerTurn}
       </p>
-      <p>Item Level Requirement:{props.raid.itemLevelReq}
+      <p>Item Level Requirement: {props.raid.itemLevelReq}
       </p>
-      <p>Unlock:{props.raid.unlock}
+      <p>Unlock: {props.raid.unlock}
       </p>
     </div>
   )

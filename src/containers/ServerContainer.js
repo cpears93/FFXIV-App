@@ -15,8 +15,8 @@ class ServerContainer extends Component {
   componentDidMount(){
     const request = new Request();
 
-    request.get('api/servers')
-    .then(data => this.setState({servers: data}))
+    request.get('api/server')
+    .then(data => this.setState({server: data}))
   }
 
   render(){
