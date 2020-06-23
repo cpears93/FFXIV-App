@@ -1,18 +1,18 @@
 import React, {Fragment} from 'react';
 
-const CharacterClass = ({characterClass}) => {
+const Character = ({character}) => {
 
-  if (!characterClass){
+  if (!character){
     return "Loading..."
   }
   return (
     <Fragment>
-    <p>{characterClass.baseClass}</p>
-    <p>{characterClass.job}</p>
-    <p>{characterClass.role}</p>
-    <p>{characterClass.startingLocation}</p>
-    <p>{characterClass.prerequisites}</p>
-    <p>{characterClass.startingLevel}</p>
+    <p>{character.baseClass}</p>
+    <p>{character.job}</p>
+    <p>{character.role}</p>
+    <p>{character.startingLocation}</p>
+    <p>{character.prerequisites}</p>
+    <p>{character.startingLevel}</p>
     </Fragment>
   )
 }

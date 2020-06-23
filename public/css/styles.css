@@ -1,0 +1,78 @@
+.component {
+  margin: 30px;
+  padding: 10px;
+  width: 350px;
+  border: 1px solid gold;
+}
+
+.name {
+  color: gold;
+}
+
+ul.component-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li.component-item {
+  display: inline;
+}
+
+.navLink {
+  display: inline;
+}
+
+body {
+    height: 150vh;
+    font-family: jupiter-bold;
+  background-color; darkBlue;
+}
+#root {
+  margin-top: 100px;
+  padding: 25px;
+}
+
+.main-image{
+  width:100%;
+  height:100%;
+}
+header {
+  background-colour: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+    display: flex;
+    allign-items: center;
+}
+header * {
+  display: inline;
+}
+header img {
+  height: 80px;
+margin-left: 40px;
+}
+header li {
+  margin: 25px;
+}
+
+a {
+  color: black;
+}
+
+.singleCharacter {
+  display: flex;
+  justify-content: center;
+}
+.button-link {
+  font: bold 12px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-left: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}

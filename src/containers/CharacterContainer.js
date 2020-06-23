@@ -8,7 +8,7 @@ class CharacterContainer extends Component {
     super(props);
 
     this.state = {
-      class: []
+      character: []
     }
   }
 
