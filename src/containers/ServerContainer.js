@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ServerList from '../components/servers/ServerList';
-import Requerst from '../helpers/request.js';
+import Request from '../helpers/request.js';
 
 class ServerContainer extends Component {
   constructor(props){
@@ -15,8 +15,8 @@ class ServerContainer extends Component {
   componentDidMount(){
     const request = new Request();
 
-    request.get('api/server')
-    .then(data => this.setState({server: data}))
+    request.get('api/servers')
+    .then(data => this.setState({servers: data}))
   }
 
   render(){

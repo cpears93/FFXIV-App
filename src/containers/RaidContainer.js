@@ -15,8 +15,8 @@ class RaidContainer extends Component {
   componentDidMount(){
     const request = new Request();
 
-    request.get('api/raid')
-    .then(data => this.setState({raid: data}))
+    request.get('api/raids')
+    .then(data => this.setState({raids: data}))
   }
 
   render(){

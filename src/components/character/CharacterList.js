@@ -3,23 +3,21 @@ import Character from './Character.js';
 
 const CharacterList = (props) => {
 
-  // if (props.Character.length === 0){
-  //   return (<p>Loading...</p>)
-  // }
+  if (props.character.length === 0){
+    return ("Loading...")
+  }
 
-  const allCharacter = props.character.map((character, index) => {
+  const allCharacters = props.characters.map((character) => {
     return (
-      <li key={index} className="component-item">
-        <div className="component">
+      <li key={character.id} className="component-item">
          <Character character={character} />
-        </div>
       </li>
-    )
+  )
   })
 
   return (
     <ul className="component-list">
-      {allCharacter}
+      {allCharacters}
     </ul>
 
   )

@@ -12,9 +12,9 @@ const MainContainer = () => {
     <Fragment>
     <NavBar/>
     <Switch>
-      <Route path="/character" component={CharacterContainer} />
-      <Route path="/server" component={ServerContainer} />
-      <Route path="/raid" component={RaidContainer} />
+      <Route path="/characters" component={CharacterContainer} />
+      <Route path="/servers" component={ServerContainer} />
+      <Route path="/raids" component={RaidContainer} />
     </Switch>
 
 

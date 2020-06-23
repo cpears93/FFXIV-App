@@ -7,6 +7,7 @@ class App extends Component {
   render () {
     return (
       <div>
+      <h2>Final Fantasy XIV Companion App</h2>
       <MainContainer />
       </div>
     );

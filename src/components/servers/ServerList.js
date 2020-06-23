@@ -1,5 +1,5 @@
 import React from 'react';
-import Server from './Server.js';
+import Server from './Server.js'
 
 const ServerList = (props) => {
   const servers = props.servers.map((server) => {

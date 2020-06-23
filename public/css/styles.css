@@ -2,11 +2,11 @@
   margin: 30px;
   padding: 10px;
   width: 350px;
-  border: 1px solid gold;
+  border: 1px solid goldenrod;
 }
 
 .name {
-  color: gold;
+  color: goldenrod;
 }
 
 ul.component-list {

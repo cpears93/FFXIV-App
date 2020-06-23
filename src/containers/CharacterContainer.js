@@ -7,16 +7,16 @@ class CharacterContainer extends Component {
   constructor(props){
     super(props);
     this.state = {
-      character: []
+      characters: []
     }
   }
 
   componentDidMount(){
     const request = new Request();
 
-    request.get('/api/pirates')
+    request.get('/api/characters')
     .then((data) => {
-      this.setState({character: data})
+      this.setState({characters: data})
     })
   }
 

@@ -3,23 +3,21 @@ import Raid from './Raid.js'
 
 const RaidList = (props) => {
 
-  if (props.Raid.length === 0){
-    return ("Loading...")
-  }
+  // if (props.Raid.length === 0){
+  //   return ("Loading...")
+  // }
 
-  const allRaid = props.raid.map((raid, index) => {
+  const raids = props.raids.map((raid) => {
     return (
-      <li key={index} className="component-item">
-        <div className="component">
+      <li key={raid.id} className="component-item">
          <Raid raid={raid} />
-        </div>
       </li>
-    )
+  )
   })
 
   return (
     <ul className="component-list">
-      {allRaid}
+      {raids}
     </ul>
 
   )
