@@ -3,11 +3,13 @@ import React from 'react';
 const NavBar = (props) => {
   return (
     <header>
-      <img src="..." alt="logo"/>
+    <img src="https://www.mmo-services.com/images/iconesmmorpg/icone_ff14_256_256.png" alt="logo"/>
+
+
 
       <ul>
         <li className="navLink">
-          <a href="/character">Character</a>
+          <a href="/characters">Characters</a>
         </li>
         <li className="navLink">
           <a href="/servers">Servers</a>
@@ -17,7 +19,8 @@ const NavBar = (props) => {
         </li>
 
       </ul>
-    </header>
+     </header>
+
   )
 }
 
