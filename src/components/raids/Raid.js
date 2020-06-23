@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Server = (props) => {
+const Raid = (props) => {
 
   return (
     <div className="component">
@@ -28,6 +28,7 @@ const Server = (props) => {
       <p className="unlock">
         {props.raid.unlock}
       </p>
+    </div>
   )
 }
 

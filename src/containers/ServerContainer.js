@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import ServerList from '../components/servers/Serverlist';
+import ServerList from '../components/servers/ServerList';
 import Requerst from '../helpers/request.js';
 
 class ServerContainer extends Component {
@@ -10,6 +10,13 @@ class ServerContainer extends Component {
     this.state = {
       servers: []
     }
+  }
+
+  componentDidMount(){
+    const request = new Request();
+
+    request.get('api/servers')
+    .then(data => this.setState({servers: data}))
   }
 
   render(){

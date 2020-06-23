@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import CharacterList from '../components/character/Character';
+import CharacterList from '../components/character/CharacterList';
 import Request from '../helpers/request.js';
 
 class CharacterContainer extends Component {
@@ -10,6 +10,13 @@ class CharacterContainer extends Component {
     this.state = {
       character: []
     }
+  }
+
+  componentDidMount(){
+    const request = new Request();
+
+    request.get('api/characters')
+    .then(data => this.setState({characters: data}))
   }
 
   render(){
