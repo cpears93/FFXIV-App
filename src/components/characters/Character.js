@@ -5,6 +5,7 @@ const Character = ({character}) => {
   if (!character){
     return "Loading..."
   }
+  
   return (
     <Fragment>
     <p>Base Class: {character.baseClass}

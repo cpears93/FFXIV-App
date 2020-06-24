@@ -3,7 +3,7 @@ import Raid from './Raid.js'
 
 const RaidList = (props) => {
 
-  // if (props.Raid.length === 0){
+  // if (props.raid.length === 0){
   //   return ("Loading...")
   // }
 

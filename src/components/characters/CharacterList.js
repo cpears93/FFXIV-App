@@ -1,13 +1,13 @@
 import React from 'react';
-import Character from './Character.js';
+import Character from './Character.js'
 
 const CharacterList = (props) => {
 
-  if (props.character.length === 0){
-    return ("Loading...")
-  }
+  // if (props.characters.length === 0){
+  //   return ("Loading...")
+  // }
 
-  const allCharacters = props.characters.map((character) => {
+  const characters = props.characters.map((character) => {
     return (
       <li key={character.id} className="component-item">
          <Character character={character} />
@@ -17,7 +17,7 @@ const CharacterList = (props) => {
 
   return (
     <ul className="component-list">
-      {allCharacters}
+      {characters}
     </ul>
 
   )
