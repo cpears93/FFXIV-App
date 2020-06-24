@@ -29,7 +29,7 @@ class CharacterContainer extends Component {
     }
 
     return(
-      <CharacterList character = {this.state.characters} />
+      <CharacterList characters = {this.state.characters} />
     )
   }
 

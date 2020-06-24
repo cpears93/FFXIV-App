@@ -21,12 +21,12 @@ class ServerContainer extends Component {
   }
 
   render(){
-    if (!this.state.characters || this.state.servers.length === 0){
+    if (!this.state.servers || this.state.servers.length === 0){
       return (<h2>Loading</h2>)
     }
 
     return(
-      <ServerList server = {this.state.servers} />
+      <ServerList servers = {this.state.servers} />
     )
   }
 

@@ -26,7 +26,7 @@ class RaidContainer extends Component {
     }
 
     return(
-      <RaidList server = {this.state.raids} />
+      <RaidList raids = {this.state.raids} />
     )
   }
 
