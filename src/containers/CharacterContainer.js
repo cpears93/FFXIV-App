@@ -12,25 +12,24 @@ class CharacterContainer extends Component {
   }
 
   componentDidMount(){
+    console.log("character container did mount")
     const request = new Request();
 
-    request.get('/api/characters')
+    request.get('http://localhost:8080/api/characters')
     .then((data) => {
+      console.log(data);
       this.setState({characters: data})
     })
   }
 
+
   render(){
+    if (!this.state.characters || this.state.characters.length === 0){
+      return (<h2>Loading</h2>)
+    }
+
     return(
-      <Router>
-       <Fragment>
-        <Switch>
-         <Route render={(props) => {
-           return <CharacterList character = {this.state.character} />
-         }} />
-        </Switch>
-      </Fragment>
-     </Router>
+      <CharacterList character = {this.state.characters} />
     )
   }
 

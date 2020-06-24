@@ -13,23 +13,20 @@ class RaidContainer extends Component {
   }
 
   componentDidMount(){
+    console.log("raid container did mount");
     const request = new Request();
 
-    request.get('api/raids')
+    request.get('http://localhost:8080/api/raids')
     .then(data => this.setState({raids: data}))
   }
 
   render(){
+    if (!this.state.raids || this.state.raids.length === 0){
+      return (<h2>Loading</h2>)
+    }
+
     return(
-      <Router>
-       <Fragment>
-        <Switch>
-         <Route render={(props) => {
-           return <RaidList raids={this.state.raids} />
-         }} />
-        </Switch>
-       </Fragment>
-      </Router>
+      <RaidList server = {this.state.raids} />
     )
   }
 

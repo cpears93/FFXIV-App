@@ -13,23 +13,20 @@ class ServerContainer extends Component {
   }
 
   componentDidMount(){
+    console.log("server container did mount");
     const request = new Request();
 
-    request.get('api/servers')
+    request.get('http://localhost:8080/api/servers')
     .then(data => this.setState({servers: data}))
   }
 
   render(){
+    if (!this.state.characters || this.state.servers.length === 0){
+      return (<h2>Loading</h2>)
+    }
+
     return(
-      <Router>
-       <Fragment>
-        <Switch>
-         <Route render={(props) => {
-           return <ServerList servers={this.state.servers} />
-         }} />
-        </Switch>
-       </Fragment>
-      </Router>
+      <ServerList server = {this.state.servers} />
     )
   }
 

@@ -3,10 +3,6 @@ import Raid from './Raid.js'
 
 const RaidList = (props) => {
 
-  // if (props.raid.length === 0){
-  //   return ("Loading...")
-  // }
-
   const raids = props.raids.map((raid) => {
     return (
       <li key={raid.id} className="component-item">
